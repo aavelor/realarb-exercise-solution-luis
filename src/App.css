@@ -1,0 +1,89 @@
+:root{
+  --main-font: 'Montserrat', sans-serif;
+  --main-color: #201b21;
+  --premium-color: #2115e7;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: var(--main-color);
+}
+
+input[type="text"]{
+  margin: 0 10px;
+  height: 20px;
+  padding: 10px;
+}
+
+.App p {
+  font-weight: bold;
+}
+
+.App-Title{
+  font-size: 3em;
+  font-family: var(--main-font);
+}
+
+.App-Subtitle {
+  font-size: 1.5em;
+  font-family: var(--main-font);
+
+}
+
+.App-Result {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0;
+}
+
+.App-brandName {
+  list-style-type: none;
+  font-size: 2.5em;
+  font-weight: 600;
+  font-family: var(--main-font);
+}
+
+.App-Stock{
+  font-family: var(--main-font);
+  font-size: 1.6em;
+  display: block;
+  margin: 10px 0;
+
+}
+
+.App-Premium{
+  border: 2px solid var(--premium-color);
+  font-family: var(--main-font);
+  font-size: .8em;
+  font-weight: 500;
+  color: var(--premium-color);
+  padding: 6px 8px;
+  border-radius:15px;
+  display: block;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.App-Button{
+  border: 1px solid var(--main-color);
+  background-color: white;
+  font-family: var(--main-font);
+  color: var(--main-color);
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 14px 22px;
+  transition: all 200ms ease-in-out;
+
+}
+
+.App-Button:hover{
+  background-color: var(--main-color);
+  color: white;
+  border: 1px solid var(--main-color);
+}
+
+.hidden {
+  visibility: hidden;
+}
